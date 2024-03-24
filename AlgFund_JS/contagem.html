@@ -1,0 +1,14 @@
+<script>
+    var n = parseInt(prompt("Digite a quantidade de termos a serem lidos"));
+    var contagem = 0;
+    
+    for (var i = 1; i <= n; i++){
+        var numero = parseFloat(prompt("Digite um número"));
+        if (numero % 1 ===0){
+            contagem = contagem + 1;
+        }
+        document.write( numero + " ");
+    }
+    document.write ("</br>");
+    document.write ("Número de inteiros: " + contagem);
+</script>

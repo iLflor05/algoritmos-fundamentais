@@ -1,0 +1,15 @@
+<script>
+var a = parseInt(prompt("Digite o primeiro número"));
+var b = parseInt(prompt("Digite o segundo número"));
+function mdc (a, b){
+    while(b != 0){
+        var i = b;
+        b = a % b;
+        a = i;
+    }
+    return a;
+}
+
+document.write("MDC de " + a + " e " + b +" é: ");
+document.write(mdc(a, b));
+</script>
